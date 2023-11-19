@@ -1,2 +1,2 @@
-# -rsschool-cv
-cv 
+# CV 
+https://elenafwork.github.io/rsschool-cv/cv
