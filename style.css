@@ -37,6 +37,7 @@ ul{
     max-width: 300px;
     padding: 1em;
     border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
 }
 footer ul {
     list-style: none;
