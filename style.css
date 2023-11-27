@@ -28,7 +28,16 @@ h3{
     color:maroon;
 
 }
-
+ul{
+    list-style: circle;
+}
+#code-example p{
+    background-color: darkgray;
+    border: 1px solid gray;
+    max-width: 300px;
+    padding: 1em;
+    border-radius: 3px;
+}
 footer ul {
     list-style: none;
 }
