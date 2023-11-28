@@ -1,5 +1,5 @@
 body{
-    background-color: antiquewhite;
+    background-color: rgb(250, 244, 236);
     pa
 }
 header{
@@ -28,7 +28,17 @@ h3{
     color:maroon;
 
 }
-
+ul{
+    list-style: circle;
+}
+#code-example p{
+    background-color: darkgray;
+    border: 1px solid gray;
+    max-width: 300px;
+    padding: 1em;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
 footer ul {
     list-style: none;
 }
