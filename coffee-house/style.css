@@ -1,0 +1,31 @@
+:root{
+    --background-body:rgb(225,212,201);
+    --background-container: rgb(102,95,85);
+    --background-backdrop:rgb(102,101,100);
+    --text-dark: rgb(64,63,61);
+    --text-light:rgb(225,212,201);
+    --text-accent: rgb(225,212,201);
+    
+}
+body{
+    background-color: var(--background-body);
+    color:var(--text-dark);
+    font-family:Arial;
+
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1em 2em;
+}
+#navigator ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navigator ul li{
+    padding-right: 1em;
+}
