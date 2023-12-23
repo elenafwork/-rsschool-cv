@@ -1,3 +1,4 @@
+
 :root{
     --background-body:rgb(225,212,201);
     --background-container: rgb(102,95,85);
@@ -35,4 +36,66 @@ nav{
 }
 #navigator ul li{
     padding-right: 1em;
+
+body{
+    background-color: rgb(250, 244, 236);
+    pa
+}
+header{
+    background-color: magenta;
+}
+header h1 {
+    display: inline-block;
+    justify-content: left;
+    align-self: flex-start;
+    color: antiquewhite;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+main{
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    color:maroon;
+
+}
+ul{
+    list-style: circle;
+}
+#code-example p{
+    background-color: darkgray;
+    border: 1px solid gray;
+    max-width: 300px;
+    padding: 1em;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer ul {
+    list-style: none;
+}
+footer  ul li {
+ display: inline-block;
+ padding: 10px;
+margin-left: 20px;
+}
+ 
+footer  ul li a{
+    color: rgb(89, 2, 103);
+    text-decoration: none;
+    font-size: larger;
+    font-style: oblique;
+}
+
+footer  ul li a:hover {
+  text-decoration: underline;
+  color: aqua;
+
 }

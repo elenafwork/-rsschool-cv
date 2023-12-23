@@ -1,2 +1,2 @@
 # CV 
-https://elenafwork.github.io/rsschool-cv/cv
+https://elenafwork.github.io/rsschool-cv/
