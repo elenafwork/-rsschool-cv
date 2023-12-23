@@ -3,23 +3,37 @@
     --background-body:rgb(225,212,201);
     --background-container: rgb(102,95,85);
     --background-backdrop:rgb(102,101,100);
-    --text-dark: rgb(64,63,61);
+    --text-dark:  #403F3D;
     --text-light:rgb(225,212,201);
-    --text-accent: rgb(225,212,201);
+    --text-accent: #B0907A;
     
 }
 body{
     background-color: var(--background-body);
     color:var(--text-dark);
-    font-family:Arial;
-font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size:16px;
+    font-weight: 400;
+    line-height:150% ;
 }
-div{
- font-size:0.8rem ;
+h1{
+    font-size: 72px;
+      font-weight: 600;
+      line-height: 105%;
 }
-div p{
-    font-size: 0.5rem;
+h2{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
 }
+.accent{
+    font-style: italic;
+    color: var(--text-accent);
+}
+section#hero{
+    background-image: url('./images/img-hero.jpg');
+}
+
 
 nav{
     display:flex;
@@ -70,14 +84,7 @@ h3{
 ul{
     list-style: circle;
 }
-#code-example p{
-    background-color: darkgray;
-    border: 1px solid gray;
-    max-width: 300px;
-    padding: 1em;
-    border-radius: 3px;
-    font-family: 'Courier New', Courier, monospace;
-}
+
 footer ul {
     list-style: none;
 }
