@@ -25,13 +25,20 @@ h2{
     font-size: 60px;
     font-weight: 600;
     line-height: 125%;
+    margin: 0;
+}
+h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+    margin: 0;
 }
 .accent{
     font-style: italic;
     color: var(--text-accent);
 }
 section#hero{
-    background-image: url('./images/img-hero.jpg');
+    background-image: url('./assets/images/img-hero.jpg');
 }
 
 
@@ -50,59 +57,52 @@ nav{
 }
 #navigator ul li{
     padding-right: 1em;
+}
 
-body{
-    background-color: rgb(250, 244, 236);
-    pa
-}
-header{
-    background-color: magenta;
-}
-header h1 {
-    display: inline-block;
-    justify-content: left;
-    align-self: flex-start;
-    color: antiquewhite;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: lighter;
-    margin-top: 20px;
-    margin-left: 20px;
-    
-}
-main{
-    margin-top: 2em;
-    margin-left: 3em;
-    margin-right: 3em;
+
+
+
+
+footer{
+    background-color: var(--background-container);
+    color: var(--text-light);
     display: flex;
-    flex-direction: column;
+max-width: 1360px;
+padding: 100px;
+justify-content: center;
+align-items: center;
+gap: 100px;
+align-self: stretch;
+border-radius: 40px;
+margin-left: 40px;
+margin-right: 40px;
+margin-bottom: 40px;
 }
-h3{
-    color:maroon;
-
+footer div{
+    max-width:530px;
+    height: 250px;
+   
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 40px;
+flex: 1 0 0;
 }
-ul{
-    list-style: circle;
-}
-
-footer ul {
+#social-media ul{
+    display: flex;
+    flex-direction: row;
     list-style: none;
+    padding: 0;
 }
-footer  ul li {
- display: inline-block;
- padding: 10px;
-margin-left: 20px;
+#social-media ul li{
+    margin-right: 12px;
 }
- 
-footer  ul li a{
-    color: rgb(89, 2, 103);
-    text-decoration: none;
-    font-size: larger;
-    font-style: oblique;
+ul#contacts{
+    list-style: none;
+    padding: 0;
+   
 }
-
-footer  ul li a:hover {
-  text-decoration: underline;
-  color: aqua;
-
+ul#contacts li{
+    margin-bottom: 1em;
 }
