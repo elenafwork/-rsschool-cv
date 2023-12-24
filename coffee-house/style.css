@@ -305,12 +305,15 @@ align-self: stretch;
     flex-direction: row;
     
 }
-#menu-offer ul li {
+.tab-item{
     padding: 8px 16px 8px 8px;
     margin-right:8px;
     text-decoration: none;
     border:var(--border-light) 1px solid;
     border-radius: 20px;
+}
+.tab-item:hover{
+    background-color: var(--background-container);
 }
 #menu-offer ul li a{
     text-decoration: none;
