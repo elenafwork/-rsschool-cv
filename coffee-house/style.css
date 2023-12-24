@@ -18,7 +18,7 @@ body{
     font-weight: 400;
     line-height:150% ;
     padding:20px 0 40px 0;
- 
+    
     
 }
 main{
@@ -88,8 +88,12 @@ color: var(--text-light);
 
 #hero{
 background-image: url('./assets/images/img-hero.jpg') ;
+background-repeat: no-repeat;
+background-size: cover;
 border-radius: 40px;
+
 display: flex;
+width: 100%;
 max-width: 1360px;
 width: 100%;
 padding: 100px;
@@ -168,11 +172,15 @@ gap: 40px;
     height: 430px;
     border-radius: 20px;
  }
+ header{
+    max-width: 1360px;
+    margin: 0 auto;
+ }
 nav{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:1em 2em;
+    padding:1em 0;
     font-weight: 600;
 }
 #navigator ul{
