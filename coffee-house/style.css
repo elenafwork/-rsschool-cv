@@ -177,9 +177,39 @@ nav{
     color: var(--text-dark);
 }
 
-
-
-
+#mobile-app{
+display: flex;
+max-width: 1360px;
+justify-content: center;
+align-items: center;
+gap: 100px;
+flex: 1 0 0;
+}
+#app-img img{
+    width: 630px;
+    height: auto;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+.button-app-store{
+display: flex;
+width: 200px;
+padding: 12px 20px;
+align-items: center;
+gap: 8px;
+border-radius: 100px;
+border: 1px solid var(--text-dark);
+background-color: var(--background-body);
+margin-right: 20px;
+}
+.button-app-store p{
+    margin: 0;
+}
+.small-text{
+    font-size: 10px;
+}
 
 footer{
     background-color: var(--background-container);
