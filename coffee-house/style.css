@@ -483,7 +483,7 @@ card:hover {
 
 /*-----------------------------------------------TABLET------------------------------*/
 
-@media screen and (min-width:768px) {
+@media screen and (max-width:768px) {
     body {
         padding: 40px;
         margin: 0;
@@ -607,12 +607,49 @@ card:hover {
 }
 
 /*-------------------MOBILE------------------------------------------------------*/
-@media screen and (min-width:380px) {
+@media screen and (max-width:380px){
     main {
 
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    #about {
+        display: flex;
+        padding: 0px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+
+    div.images {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 40px;
+        align-self: stretch;
+        justify-content: center;
+    }
+
+    .img-column {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .img-box1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-box2 {
+        display: none;
     }
 }
