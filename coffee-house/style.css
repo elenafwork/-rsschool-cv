@@ -431,19 +431,51 @@ card:hover {
 
 /*----------------------------DEsKTOP-------------------------------------------------*/
 @media only screen and (min-width: 1440px) {
-    main {
-        max-width: 1360px;
-        margin: 0 auto 100px auto;
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 40px 0;
+        justify-content: center;
+
     }
 
-    #hero {
+    main {
+        display: flex;
+        max-width: 1360px;
 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin: auto;
+    }
+
+    #offer {
+        display: flex;
+        width: 530px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        color: var(--text-light);
+    }
+
+
+
+
+
+
+    #hero {
+        background-image: url('./assets/images/img-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 40px;
 
         display: flex;
-        width: 100%;
-        max-width: 1360px;
-        width: 100%;
+
+        width: 1360px;
+
+
         padding: 100px;
         flex-direction: column;
         justify-content: center;
@@ -477,6 +509,119 @@ card:hover {
         align-items: flex-start;
         flex: 1 0 0;
         align-self: stretch;
+    }
+
+    /*-------------------MENU PAGE-----------------------------------*/
+    #menu-page {
+        display: flex;
+        max-width: 1360px;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        align-self: stretch;
+        margin: 0 auto 100px auto;
+
+    }
+
+    #menu-offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+
+    #menu-offer h2 {
+        width: 800px;
+        text-align: center;
+    }
+
+    #menu-offer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+
+    .tab-item {
+        padding: 8px 16px 8px 8px;
+        margin-right: 8px;
+        text-decoration: none;
+        border: var(--border-light) 1px solid;
+        border-radius: 20px;
+    }
+
+    .tab-item:hover {
+        background-color: var(--background-container);
+    }
+
+    #menu-offer ul li a {
+        text-decoration: none;
+        color: var(--text-dark);
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .icon {
+        width: 24px;
+        margin-right: 8px;
+    }
+
+    .menu {
+        max-width: 1360px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 40px;
+        
+    }
+
+    card {
+        width: 250px;
+        height: 560px;
+        border: solid 2px var(--border-light);
+        border-radius: 40px;
+    }
+
+    card:hover {
+        transform: scale(0.9);
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+        border-radius: 40px;
+
+
+    }
+
+    .card-description {
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+
+    .tab-item:active {
+        background-color: var(--background-container);
+
+
+
+
     }
 
 }
@@ -598,7 +743,8 @@ card:hover {
     }
 
     card {
-        width: 44%;
+        width: 348px;
+        margin: auto;
         height: auto;
         border: solid 2px var(--border-light);
         border-radius: 40px;
@@ -691,7 +837,7 @@ card:hover {
     footer {
         display: flex;
         max-width: 348px;
-       
+
         height: auto;
 
         padding: 60px 16px;
@@ -700,6 +846,12 @@ card:hover {
         justify-content: center;
         align-items: center;
         align-self: stretch;
+    }
+    card {
+        width: 90%;
+        height: auto;
+        border: solid 2px var(--border-light);
+        border-radius: 40px;
     }
 }
 
@@ -727,7 +879,7 @@ card:hover {
     }
 
     main {
-       max-width: 680px;
+        max-width: 680px;
         width: 100%;
         margin: 0 16px;
         display: flex;
@@ -736,7 +888,7 @@ card:hover {
     }
 
     #hero {
-       width: 100%;
+        width: 100%;
 
         padding: 60px 16px;
         margin: 0;
@@ -746,7 +898,8 @@ card:hover {
         align-items: flex-start;
         align-self: stretch;
     }
-    #offer h1{
+
+    #offer h1 {
         width: 100%;
     }
 
@@ -815,7 +968,7 @@ card:hover {
     footer {
         max-width: 680px;
         width: 100%;
-         
+
         padding: 60px 16px;
         margin: 100px auto 40px auto;
         display: flex;
@@ -829,7 +982,13 @@ card:hover {
         align-self: stretch;
     }
 
-
+    card {
+        width: 348px;
+        margin: auto;
+        height: auto;
+        border: solid 2px var(--border-light);
+        border-radius: 40px;
+    }
 
 
 
