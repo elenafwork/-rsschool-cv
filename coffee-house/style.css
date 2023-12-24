@@ -266,11 +266,17 @@ flex: 1 0 0;
 ul#contacts{
     list-style: none;
     padding: 0;
-   
+  
 }
-ul#contacts li{
+
+ul#contacts li {
     margin-bottom: 1em;
 }
+ul#contacts li a{
+    text-decoration: none;
+    color: var(--text-light);
+}
+
 ul#contacts li:hover{
    text-decoration: underline;
 }
@@ -361,4 +367,11 @@ card:hover{
     align-items: flex-start;
     flex: 1 0 0;
     align-self: stretch;
+}
+.tab-item:active{
+    background-color: var(--background-container);
+
+
+
+  
 }
