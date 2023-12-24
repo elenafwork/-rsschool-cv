@@ -430,7 +430,7 @@ card:hover {
 }
 
 /*----------------------------DEsKTOP-------------------------------------------------*/
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
     main {
         max-width: 1360px;
         margin: 0 auto 100px auto;
@@ -454,7 +454,7 @@ card:hover {
     }
 
     card {
-        width:21%;
+        width: 21%;
         height: 560px;
         border: solid 2px var(--border-light);
         border-radius: 40px;
@@ -483,14 +483,14 @@ card:hover {
 
 /*-----------------------------------------------TABLET------------------------------*/
 
-@media screen and (max-width:768px) {
+@media only screen and (min-device-width: 768px) {
     body {
         padding: 40px;
         margin: 0;
     }
 
     main {
-        min-width: 688px;
+        max-width: 688px;
         width: 100%;
         display: flex;
         margin: 20px 0 100px 0;
@@ -598,7 +598,7 @@ card:hover {
     }
 
     card {
-        width: %;
+        width: 44%;
         height: auto;
         border: solid 2px var(--border-light);
         border-radius: 40px;
@@ -607,9 +607,30 @@ card:hover {
 }
 
 /*-------------------MOBILE------------------------------------------------------*/
-@media screen and (max-width:380px){
-    main {
+@media only screen and (max-width:380px) {
+    body {
+        max-width: 380px;
+        padding: 20px 16px 40px 16px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    h1 {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 115%;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    main {
+        max-width: 348px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -652,4 +673,167 @@ card:hover {
     .img-box2 {
         display: none;
     }
+
+    #mobile-app {
+        max-width: 348px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        align-self: stretch;
+    }
+
+
+    footer {
+        display: flex;
+        max-width: 348px;
+       
+        height: auto;
+
+        padding: 60px 16px;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+    }
+}
+
+/*--------------------LARGE MOBILE----------------*/
+@media only screen and (min-width:380px) and (max-width:767px) {
+    body {
+        width: 100%;
+        padding: 0 16px;
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 115%;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    main {
+       max-width: 680px;
+        width: 100%;
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #hero {
+       width: 100%;
+
+        padding: 60px 16px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+    #offer h1{
+        width: 100%;
+    }
+
+    #favorite-coffee {
+        min-width: 348px;
+        margin: 0;
+        display: flex;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    #about {
+        display: flex;
+        padding: 0px;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+
+    div.images {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        gap: 40px;
+        align-self: stretch;
+        justify-content: center;
+    }
+
+    .img-column {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .img-box1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-box2 {
+        display: none;
+    }
+
+    #mobile-app {
+        min-width: 348px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        align-self: stretch;
+    }
+
+
+
+    footer {
+        max-width: 680px;
+        width: 100%;
+         
+        padding: 60px 16px;
+        margin: 100px auto 40px auto;
+        display: flex;
+        height: auto;
+
+
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+    }
+
+
+
+
+
+
+
+
 }
