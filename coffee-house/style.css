@@ -6,6 +6,8 @@
     --text-dark:  #403F3D;
     --text-light:rgb(225,212,201);
     --text-accent: #B0907A;
+    --border-light:rgba(193,182,173,1);
+
     
 }
 body{
@@ -219,4 +221,86 @@ ul#contacts{
 }
 ul#contacts li{
     margin-bottom: 1em;
+}
+
+/*-------------------MENU PAGE-----------------------------------*/
+#menu-page{
+    display: flex;
+    max-width: 1360px;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;  
+    margin-bottom: 100px;
+}
+#menu-offer{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 40px;
+align-self: stretch;
+}
+#menu-offer h2{
+    width: 800px;
+    text-align: center; 
+}
+#menu-offer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+#menu-offer ul li {
+    padding: 8px 16px 8px 8px;
+    margin-right:8px;
+    text-decoration: none;
+    border:var(--border-light) 1px solid;
+    border-radius: 20px;
+}
+#menu-offer ul li a{
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+}
+.icon{
+    width: 24px;
+    margin-right: 8px;
+}
+.menu{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+card{
+    width:22%;
+    height: 560px;
+    border: solid 2px var(--border-light);
+    border-radius: 40px;
+}
+.card-img{
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    
+
+}
+.card-description{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
 }
