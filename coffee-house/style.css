@@ -473,8 +473,8 @@ card:hover {
 
         display: flex;
 
-        width: 1360px;
-
+        
+     
 
         padding: 100px;
         flex-direction: column;
@@ -483,8 +483,71 @@ card:hover {
         align-items: flex-start;
         align-self: stretch;
         margin: 0 auto;
+        width: 100%;
+        max-width: 1360px;
     }
 
+
+    footer {
+        background-color: var(--background-container);
+        color: var(--text-light);
+        display: flex;
+        max-width: 1360px;
+        padding: 100px;
+        justify-content: center;
+        align-items: center;
+        margin: 100px auto 40px auto;
+        gap: 100px;
+        align-self: stretch;
+        border-radius: 40px;
+    
+    }
+    
+    footer div {
+        max-width: 530px;
+        height: 250px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        flex: 1 0 0;
+    }
+    
+    #social-media ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        padding: 0;
+    }
+    
+    #social-media ul li {
+        margin-right: 12px;
+    }
+    
+    #social-media ul li img:hover {
+        background-color: var(--background-body);
+    }
+    
+    ul#contacts {
+        list-style: none;
+        padding: 0;
+    
+    }
+    
+    ul#contacts li {
+        margin-bottom: 1em;
+    }
+    
+    ul#contacts li a {
+        text-decoration: none;
+        color: var(--text-light);
+    }
+    
+    ul#contacts li:hover {
+        text-decoration: underline;
+    }
     card {
         width: 21%;
         height: 560px;
