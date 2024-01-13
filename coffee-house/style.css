@@ -22,6 +22,56 @@ body {
 
 }
 
+.burger-menu{
+display: block;
+background-color: var(--background-body);
+}
+.burger-btn{
+    position: absolute;
+    right: 20px;
+    padding: 10px 13px;
+    background-color: var(--background-body);
+transition: 0.4s;
+border: solid 2px var(--text-dark);
+border-radius: 30px;
+}
+.bar{
+    width: 20px;
+    height: 2px;
+    background-color: var(--text-dark);
+    margin: 7px 0;
+}
+.burger-btn.open{
+    padding: 15px 13px;
+}
+.bar.bar-1.open{
+    width: 23px;
+ transform: rotate(40deg);
+  
+}
+.bar.bar-2.open{
+    width: 23px;
+
+   transform: rotate(-40deg);
+     margin-top: -9px;
+     
+   }
+
+.burger-menu-items{
+    height: 0;
+    overflow: hidden;
+}
+
+.burger-menu-items.navbar{
+    height: 40em;
+    width: 30em;
+    position: absolute;
+    left: 10px;
+    top: 80px;
+    background-color: var(--background-body);
+    z-index: 10;
+    transition: 1s;
+}
 main {
     display: flex;
     max-width: 100%;
@@ -76,7 +126,12 @@ h3 {
 
 .button-primary:hover {}
 
-
+.btn-slide{
+    background-color: var(--background-body);
+    border: 1px solid var(--background-container);
+    padding: 1em;
+    border-radius: 2em;
+}
 
 
 #offer {
@@ -438,7 +493,9 @@ card:hover {
         justify-content: center;
 
     }
-
+    .burger-menu{
+        display: none;
+    }
     main {
         display: flex;
         max-width: 1360px;
@@ -696,7 +753,13 @@ card:hover {
         padding: 40px;
         margin: 0;
     }
-
+    .burger-menu{
+        display: none;
+    }
+    
+    #desktop-menu{
+        display: block;
+    }
     main {
         max-width: 688px;
         width: 100%;
@@ -825,7 +888,12 @@ card:hover {
         flex-direction: column;
         justify-content: center;
     }
-
+    .burger-menu{
+        display: block;
+    }
+    #desktop-menu{
+        display: none;
+    }
     h1 {
         font-size: 42px;
         font-weight: 600;
@@ -928,7 +996,12 @@ card:hover {
         flex-direction: column;
         justify-content: center;
     }
-
+    #burger-menu{
+        display: block;
+    }
+    #desktop-menu{
+        display: none;
+    }
     h1 {
         font-size: 42px;
         font-weight: 600;

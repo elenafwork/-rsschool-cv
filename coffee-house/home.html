@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <meta property="og:image" content="https://imgur.com/xgX8vMY" />
     <title>Resource Coffee House</title>
     <link rel="stylesheet" href="./style.css">
@@ -21,18 +21,42 @@
             <div id="title">
                 <img src="./assets/images/logo.png" alt="logo">
             </div>
-            <div id="navigator">
-                <ul>
-                    <li><a href="#favorite-coffee">Favorite Coffee</a></li>
-                    <li><a href="#about">About</a> </li>
-                    <li><a href="#mobile-app">Mobile App</a> </li>
-                    <li><a href="#contact-us">Contact Us</a> </li>
-                </ul>
-            </div>
-            <div id="menu">
+            <div id="desktop-menu">
+                <div id="navigator">
+                    <ul>
+                        <li><a href="#favorite-coffee">Favorite Coffee</a></li>
+                        <li><a href="#about">About</a> </li>
+                        <li><a href="#mobile-app">Mobile App</a> </li>
+                        <li><a href="#contact-us">Contact Us</a> </li>
+                    </ul>
+                </div>
+                <div id="menu">
 
-                <p><a href="menu.html">Menu<span><img src="./assets/icons/coffee-cup.png" alt="coffee cup"></span></a>
-                </p>
+                    <p><a href="menu.html">Menu<span><img src="./assets/icons/coffee-cup.png"
+                                    alt="coffee cup"></span></a>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="burger-menu">
+                <div class="burger-btn">
+                    <div class="bar bar-1 "></div>
+                    <div class="bar bar-2 "></div>
+
+                </div>
+
+                <div class="burger-menu-items">
+                    <ul>
+                        <li><a href="#favorite-coffee">Favorite Coffee</a></li>
+                        <li><a href="#about">About</a> </li>
+                        <li><a href="#mobile-app">Mobile App</a> </li>
+                        <li><a href="#contact-us">Contact Us</a> </li>
+                        <li><a href="menu.html">Menu<span><img src="./assets/icons/coffee-cup.png"
+                                        alt="coffee cup"></span>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
 
@@ -52,6 +76,7 @@
         <section id="favorite-coffee">
             <h2>Choose your <span class="accent">favorite</span> coffee</h2>
             <div id="coffee-slide">
+                <button class="btn-slide btn-left"><img src="./assets/icons/arrow-left.png" alt="arrow-left"></button>
                 <div class="slide-item">
                     <img src="./assets/images/coffee-slider-1.png" alt="ice-latte" class="mySlides">
                     <div class="item-description">
@@ -68,7 +93,8 @@
                 <div class="slide-item">
                     <img src="./assets/images/coffee-slider-3.png" alt="ice-coffee" class="mySlides">
                 </div>
-
+                <button class="btn-slide btn-right"><img src="./assets/icons/arrow-right.png"
+                        alt="arrow-right"></button>
 
 
 
@@ -140,6 +166,7 @@
         </div>
 
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
