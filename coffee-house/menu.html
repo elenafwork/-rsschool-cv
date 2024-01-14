@@ -16,7 +16,7 @@
 
 
 
- <header>
+    <header>
         <nav>
             <div id="title">
                 <a href="home.html"> <img src="./assets/images/logo.png" alt="logo"></a>
@@ -70,16 +70,16 @@
         <section id="menu-offer">
             <h2>Behind each of our cups hides an <span class="accent">amazing surprise</span></h2>
             <ul>
-                <li class="tab-item"><a href="#coffee-menu"><img src="./assets/icons/icon-coffee.png" alt="icon-coffee"
-                            class="icon"> Coffee</a></li>
-                <li class="tab-item"><a href="#tea-menu"><img src="./assets/icons/icon-tea.png" alt="icon-tea"
-                            class="icon">Tea</a></li>
-                <li class="tab-item"><a href="#dessert-menu"><img src="./assets/icons/icon-cake.png" alt="icon-cake"
-                            class="icon">Dessert</a></li>
+                <li class="tab-item active" type="coffee"> <img src="./assets/icons/icon-coffee.png" alt="icon-coffee"
+                        class="icon">Coffee</li>
+                <li class="tab-item" type="tea"><img src="./assets/icons/icon-tea.png" alt="icon-tea" class="icon">Tea
+                </li>
+                <li class="tab-item" type="dessert"><img src="./assets/icons/icon-cake.png" alt="icon-cake"
+                        class="icon">Dessert</li>
             </ul>
         </section>
 
-        <section id="coffee-menu" class="menu">
+        <section id="coffee" class="menu menu-items selected">
             <card class="menu-item">
                 <img src="./assets/images/coffee-1.png" alt="irish-coffee" class="card-img">
                 <div class="card-description">
@@ -179,7 +179,7 @@
 
             </card>
         </section>
-        <section id="tea-menu" class="menu">
+        <section id="tea" class="menu menu-items">
             <card class="menu-item">
                 <img src="./assets/images/tea-1.png" alt="moroccan tea" class="card-img">
                 <div class="card-description">
@@ -214,7 +214,7 @@
                 </div>
             </card>
         </section>
-        <section id="dessert-menu" class="menu">
+        <section id="dessert" class="menu menu-items">
             <card class="menu-item">
                 <img src="./assets/images/dessert-1.png" alt="cheesecake" class="card-img">
                 <div class="card-description">
@@ -308,7 +308,7 @@
         </div>
 
     </footer>
-    <script src="./index.js"></script>
+    <script src="./menu.js"></script>
 </body>
 
 </html>
