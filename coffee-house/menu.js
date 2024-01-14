@@ -22,7 +22,7 @@ document.querySelectorAll('.tab-item').forEach(function(indicator,index){
         indicator.classList.add('active');
       menuSelectedType= document.querySelectorAll('.tab-item')[index].type;
       console.log(menuSelectedType);
-      document.querySelector('.selected').classList.remove('selected');
+      document.querySelector('.menu-items.selected').classList.remove('selected');
       document.getElementById(menuSelectedType).classList.add('selected');
       
     })

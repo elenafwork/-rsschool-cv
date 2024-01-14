@@ -58,19 +58,47 @@ border-radius: 30px;
    }
 
 .burger-menu-items{
-    height: 0;
+    width: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .burger-menu-items.navbar{
     height: 40em;
-    width: 30em;
+    width: 100vh;
+    padding: 60px 40px;
     position: absolute;
     left: 10px;
     top: 80px;
     background-color: var(--background-body);
     z-index: 10;
-    transition: 1s;
+    transition: 0.7s;
+}
+.burger-menu-items ul{
+    width: 50%;
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.burger-menu-items ul li{
+    margin: 0 0 60px 0;
+    
+}
+.burger-menu-items ul li a{
+    justify-self: center;
+    text-decoration: none;
+    color: var(--text-dark);
+}
+.burger-menu-items p a{
+    text-decoration: none;
+    color: var(--text-dark);
 }
 main {
     display: flex;
@@ -354,6 +382,10 @@ nav {
     justify-content: space-between;
 
 }
+a{
+    text-decoration: none;
+    color: var(--text-dark);
+}
 
 #navigator ul li a {
     padding-right: 40px;
@@ -526,7 +558,7 @@ li.tab-item img{
     background-color: var(--background-container);
     color: var(--text-light);
 }
-.tab-item.active 
+
 
 #menu-offer ul li{
     text-decoration: none;
@@ -543,11 +575,11 @@ li.tab-item img{
     margin-right: 8px;
 }
 
-.menu{
+.menu.menu-items{
     display: none;
     
 }
-.menu.selected{
+.menu-items.selected{
     display: flex;
     max-width: 100%;
     justify-content: center;
@@ -868,7 +900,7 @@ card:hover {
     }
     
     #desktop-menu{
-        display: block;
+        display: flex;
     }
     main {
         max-width: 688px;
@@ -1106,7 +1138,7 @@ card:hover {
         flex-direction: column;
         justify-content: center;
     }
-    #burger-menu{
+    .burger-menu{
         display: block;
     }
     #desktop-menu{
