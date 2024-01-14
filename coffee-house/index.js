@@ -16,15 +16,18 @@ menu.addEventListener('click', ()=>{
 const slider=document.querySelector('.slider');
 const leftArrow=document.querySelector('.btn-left');
 const rightArrow=document.querySelector('.btn-right');
+const indicatorParents=document.querySelector('.slider-nav ul');
 var sectionIndex=0;
 leftArrow.addEventListener('click', function(){
   sectionIndex=(sectionIndex>0)? sectionIndex-1 : 2;
-  //sectionIndex+=1;
+  document.querySelector('.slider-nav  li.selected').classList.remove('selected');
+  indicatorParents.children[sectionIndex].classList.add('selected');
   slider.style.transform='translate('+ (sectionIndex) * -33 +'%)';
 })
 rightArrow.addEventListener('click', function(){
   sectionIndex=(sectionIndex<2)? sectionIndex+1 : 0;
-  //sectionIndex+=1;
+  document.querySelector('.slider-nav  li.selected').classList.remove('selected');
+  indicatorParents.children[sectionIndex].classList.add('selected');
   slider.style.transform='translate('+ (sectionIndex) * -33 +'%)';
 })
 
