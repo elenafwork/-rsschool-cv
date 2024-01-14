@@ -894,6 +894,11 @@ card:hover {
     body {
         padding: 40px;
         margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px ;
+        justify-content: center;
+
     }
     .burger-menu{
         display: none;
