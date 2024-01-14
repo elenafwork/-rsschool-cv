@@ -129,8 +129,9 @@ h3 {
 .btn-slide{
     background-color: var(--background-body);
     border: 1px solid var(--background-container);
-    padding: 1em;
+    padding: 1em 1em 0.7em 1em ;
     border-radius: 2em;
+    z-index: 10;
 }
 
 
@@ -170,6 +171,7 @@ h3 {
 
 #favorite-coffee {
     display: flex;
+    
     max-width: 1360px;
     flex-direction: column;
     align-items: center;
@@ -177,7 +179,96 @@ h3 {
     align-self: stretch;
     margin: 0 auto;
 }
+.favorite-coffee-slider{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    width: 38%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.carousel{
+    height: 700px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    height: 100%;
+    display: flex;
+    width: 300%;
+  
+    transition:  all 2s;
+}
+.slider section{
+    width: 30%;
+ flex-basis: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 
+}
+.slider-nav{
+    
+  
+    padding: 0;
+}
+.slider-nav ul{
+    position: absolute;
+    left: 50%;
+    
+    transform: translate(-50%);
+    margin: auto;
+   
+   display: flex;
+   flex-direction: row;
+   
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slider-nav ul li{
+    width: 40px;
+    height: 4px;
+    
+    border-radius: 100px;
+background-color: var(--border-light);
+    margin:15px  6px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-nav ul li.selected{
+    
+    background-color:var(--background-container);
+}
+
+
+/*
+.controls .btn-slide{
+    position:absolute;
+    top: 50%;
+
+
+}
+.btn-slide.btn-left{
+    left: 10px;
+}
+.btn-slide.btn-right{
+    right:10px
+}*/
 .item-description {
     max-width: 480px;
     display: flex;
