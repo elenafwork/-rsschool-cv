@@ -501,19 +501,34 @@ ul#contacts li:hover {
 
 }
 
-.tab-item {
+li.tab-item {
+     
     padding: 8px 16px 8px 8px;
-    margin-right: 8px;
+    margin: 0 8px;
     text-decoration: none;
+    font-weight: 600;
     border: var(--border-light) 1px solid;
-    border-radius: 20px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-
+li.tab-item img{
+    width: 30px;
+    height: 30px;
+}
 .tab-item:hover {
     background-color: var(--background-container);
+    color: var(--text-light);
 }
+.tab-item.active{
+    background-color: var(--background-container);
+    color: var(--text-light);
+}
+.tab-item.active 
 
-#menu-offer ul li a {
+#menu-offer ul li{
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 600;
@@ -528,7 +543,11 @@ ul#contacts li:hover {
     margin-right: 8px;
 }
 
-.menu {
+.menu{
+    display: none;
+    
+}
+.menu.selected{
     display: flex;
     max-width: 100%;
     justify-content: center;
