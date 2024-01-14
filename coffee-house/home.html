@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <meta property="og:image" content="https://imgur.com/xgX8vMY" />
     <title>Resource Coffee House</title>
     <link rel="stylesheet" href="./style.css">
@@ -21,23 +21,54 @@
             <div id="title">
                 <img src="./assets/images/logo.png" alt="logo">
             </div>
-            <div id="navigator">
-                <ul>
-                    <li><a href="#favorite-coffee">Favorite Coffee</a></li>
-                    <li><a href="#about">About</a> </li>
-                    <li><a href="#mobile-app">Mobile App</a> </li>
-                    <li><a href="#contact-us">Contact Us</a> </li>
-                </ul>
-            </div>
-            <div id="menu">
+            <div id="desktop-menu">
+                <div id="navigator">
+                    <ul>
+                        <li><a href="#favorite-coffee">Favorite Coffee</a></li>
+                        <li><a href="#about">About</a> </li>
+                        <li><a href="#mobile-app">Mobile App</a> </li>
+                        <li><a href="#contact-us">Contact Us</a> </li>
+                    </ul>
+                </div>
+                <div id="menu">
+                    <p>
+                        <a href="menu.html">Menu<span><img src="./assets/icons/coffee-cup.png"
+                                    alt="coffee cup"></span></a>
+                    </p>
 
-                <p><a href="menu.html">Menu<span><img src="./assets/icons/coffee-cup.png" alt="coffee cup"></span></a>
-                </p>
+                </div>
+            </div>
+
+            <div class="burger-menu">
+                <div class="burger-btn">
+                    <div class="bar bar-1 "></div>
+                    <div class="bar bar-2 "></div>
+
+                </div>
+
+                <div class="burger-menu-items">
+                    <ul>
+                        <li><a href="#favorite-coffee">Favorite Coffee</a></li>
+                        <li><a href="#about">About</a> </li>
+                        <li><a href="#mobile-app">Mobile App</a> </li>
+                        <li><a href="#contact-us">Contact Us</a> </li>
+
+
+                    </ul>
+                    <p>
+                        <a href="menu.html">Menu<span><img src="./assets/icons/coffee-cup.png"
+                                    alt="coffee cup"></span></a>
+                    </p>
+                </div>
 
             </div>
 
         </nav>
     </header>
+
+
+
+
     <main>
         <section id="hero">
             <div id="offer">
@@ -51,27 +82,65 @@
         </section>
         <section id="favorite-coffee">
             <h2>Choose your <span class="accent">favorite</span> coffee</h2>
-            <div id="coffee-slide">
-                <div class="slide-item">
-                    <img src="./assets/images/coffee-slider-1.png" alt="ice-latte" class="mySlides">
-                    <div class="item-description">
-                        <h3>S'mores Frappuccino</h3>
-                        <p class="descrioption">This new drink takes an espresso and mixes it with brown sugar and
-                            cinnamon before being topped with oat milk.</p>
-                        <h3>$5.50</h3>
+            <div class="favorite-coffee-slider">
+                <button class="controls btn-slide btn-left"><img src="./assets/icons/arrow-left.png" alt="arrow-left"></button>
+
+                <div class="container">
+
+                    <div class="carousel">
+
+
+                        <div class="slider">
+
+                            <section id="slider-1">
+                                <img src="./assets/images/coffee-slider-1.png" alt="ice-latte" class="mySlides">
+                                <div class="item-description">
+                                    <h3>S'mores Frappuccino</h3>
+                                    <p class="descrioption">This new drink takes an espresso and mixes it with brown
+                                        sugar
+                                        and
+                                        cinnamon before being topped with oat milk.</p>
+                                    <h3>$5.50</h3>
+                                </div>
+
+                            </section>
+                            <section id="slider-2">
+                                <img src="./assets/images/coffee-slider-2.png" alt="cappuccino" class="mySlides">
+                                <div class="item-description">
+                                    <h3>Caramel Macchiato</h3>
+                                    <p class="descrioption">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam.</p>
+                                    <h3>$5.00</h3>
+                                </div>
+                            </section>
+                            <section id="slider-3">
+                                <img src="./assets/images/coffee-slider-3.png" alt="ice-coffee" class="mySlides">
+                                <div class="item-description">
+                                    <h3>Ice coffee</h3>
+                                    <p class="descrioption">A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                                    <h3>$4.50</h3>
+                                </div>
+                            </section>
+
+
+                        </div>
+
+                     
+
+
                     </div>
-
+                       <div class="slider-nav">
+                            <ul>
+                                <li class="selected"></li>
+                                <li> </li>
+                                <li></li>
+                            </ul>
+                            
+                           
+                            
+                        </div>
                 </div>
-                <div class="slide-item">
-                    <img src="./assets/images/coffee-slider-2.png" alt="cappuccino" class="mySlides">
-                </div>
-                <div class="slide-item">
-                    <img src="./assets/images/coffee-slider-3.png" alt="ice-coffee" class="mySlides">
-                </div>
-
-
-
-
+                <button class="controls btn-slide btn-right"><img src="./assets/icons/arrow-right.png"
+                            alt="arrow-right"></button>
             </div>
         </section>
         <section id="about">
@@ -84,7 +153,7 @@
                 </div>
 
                 <div class="img-column">
-                    <img src="./assets/images/about-3.jpg" alt="man with coffee" class="img-box2">
+                    <img src="./assets/images/about-3.jpg" alt="man with coffee" class="img-box2" />
                     <img src="./assets/images/about-4.jpg" alt="couple with coffee" class="img-box1" />
                 </div>
 
@@ -98,10 +167,10 @@
                     wherever you are</p>
                 <div class="buttons">
                     <button class="button-app-store"><img src="./assets/icons/icon-apple.png" alt="">
-                        <p><span class="small-text">Available on the</span><br> App Store</p>
+                        <span class="small-text">Available on the</span><br> App Store
                     </button>
                     <button class="button-app-store"><img src="./assets/icons/icon-google.png" alt="">
-                        <p><span class="small-text">Available on </span> <br>Google Play</p>
+                        <span class="small-text">Available on </span> <br>Google Play
                     </button>
                 </div>
 
@@ -115,6 +184,10 @@
         </section>
 
     </main>
+
+
+
+
     <footer id="contact-us">
 
         <div id="social-media">
@@ -140,6 +213,7 @@
         </div>
 
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
